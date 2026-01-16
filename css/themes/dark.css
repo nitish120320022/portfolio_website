@@ -1,0 +1,39 @@
+/* ===============================
+   DARK THEME
+================================ */
+:root {
+  --bg-primary: #020617;
+  --bg-secondary: #020617;
+  --card-bg: #0f172a;
+
+  --text-primary: #e5e7eb;
+  --text-secondary: #94a3b8;
+
+  --accent: #22d3ee;
+  --accent-soft: rgba(34, 211, 238, 0.18);
+}
+
+/* ===============================
+   DARK BACKGROUND TEXTURE
+================================ */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(34, 211, 238, 0.06), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(56, 189, 248, 0.05), transparent 40%);
+  z-index: -1;
+}
+
+#contact::before {
+  /* content: ""; */
+  position: absolute;
+  inset: -40%;
+  background: radial-gradient(
+    circle at center,
+    rgba(34, 211, 238, 0.05),
+    transparent 65%
+  );
+  z-index: -1;
+}

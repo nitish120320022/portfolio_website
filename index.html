@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nitish Nama | Data Scientist Portfolio" />
+  <meta name="author" content="Nitish Nama" />
+
+  <!-- <meta property="og:title" content="Nitish Nama | Associate Data Scientist" />
+  <meta property="og:description" content="Data Scientist portfolio with ML, forecasting, and cloud projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-portfolio-url.com" /> -->
+
+  <title>Nitish Nama | Associate Data Scientist</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/themes/dark.css">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <!-- JS -->
+  <script src="js/main.js" defer></script>
+  <script src="js/animations/scroll.js" defer></script>
+  <script src="js/animations/skills.js" defer></script>
+  <script src="js/animations/cards.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container nav-container">
+          <!-- LOGO -->
+            <a href="/" class="navbar-logo">
+            <img src="assets/images/logo.png" alt="Nitish Nama Logo" />
+            </a>
+        <!-- LEFT NAV LINKS -->
+        <nav class="nav-left">
+            <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#publication">Publications</a></li>
+            <li><a href="#awards">Awards</a></li>
+            </ul>
+        </nav>
+
+        <!-- RIGHT CONTACT BUTTON -->
+        <div class="nav-right contact-menu">
+        <button class="btn-primary contact-btn" type="button">
+            Contact
+        </button>
+
+        <div class="contact-dropdown">
+            <a><i class="fas fa-phone"></i> +91 95099-37238</a>
+            <a href="https://www.linkedin.com/in/nitish-n-8b6851210" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/nitish120320022" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+            </a>
+            <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=namanitish03@gmail.com&cc=namanitish03@gmail.com&su=Opportunity%20or%20Collaboration&body=Hi%20Nitish,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect.%0D%0A%0D%0ARegards,"
+            target="_blank"
+            >
+            <i class="fas fa-envelope"></i> Email
+            </a>
+            <a href="assets/Nitish_Resume.pdf" target="_blank">
+            <i class="fas fa-file-alt"></i> Resume
+            </a>
+        </div>
+        </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section id="hero" class="hero">
+    <div class="container hero-content hero-grid">
+
+        <!-- TEXT CONTENT -->
+        <div class="hero-text">
+            <h1>
+            Hi, I’m <span class="highlight name-nowrap">Nitish Nama</span>
+            <span class="role">Associate Data Scientist</span>
+            </h1>
+
+            <p class="hero-subtitle">
+            Let's build systems that turn data into decisions.
+            </p>
+
+            <div class="hero-actions">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="assets/Nitish_Resume.pdf" class="btn-secondary" target="_blank">
+                Download Resume
+            </a>
+            </div>
+        </div>
+
+        <!-- IMAGE -->
+        <div class="hero-image">
+            <img src="assets/images/profile.png" alt="Nitish Nama">
+        </div>
+</div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title about-title">
+        About Me
+      </h2>
+      <p class="section-text">
+        <p class="section-text about-text">
+        <strong>Results-driven AI/ML Engineer</strong> with 2+ years of experience
+        building and deploying <span class="about-highlight">time-series forecasting</span>
+        and <span class="about-highlight">machine learning solutions</span>, primarily
+        in the <span class="about-highlight">energy domain</span>.
+        <br /><br />
+        Proficient in <span class="about-highlight">Python</span>,
+        <span class="about-highlight">Microsoft Azure</span>,
+        <span class="about-highlight">Docker</span>, and
+        <span class="about-highlight">Git/GitHub</span>, with hands-on expertise in
+        <span class="about-highlight">end-to-end ML pipelines</span>,
+        <span class="about-highlight">CI/CD automation</span>, and production monitoring.
+        <br /><br />
+        Passionate about transforming complex data into
+        <span class="about-highlight">actionable insights</span> that drive
+        real-world business impact.
+</p>
+      </p>
+    </div>
+  </section>
+
+    <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-modern-grid">
+
+      <div class="skill-block">
+        <h3>Languages</h3>
+        <p>Python</p>
+      </div>
+
+      <div class="skill-block">
+        <h3>Data Science</h3>
+        <p>
+          Machine Learning, Neural Networks, Time Series Forecasting, Temporal Fusion Transformer, Statistics, Feature Engineering, LLM, RAG,
+          Anomaly Detection, LSTM, Agentic AI, CNN
+        </p>
+      </div>
+
+      <div class="skill-block">
+        <h3>MLOps</h3>
+        <p>MLflow, Docker, CI/CD</p>
+      </div>
+
+      <div class="skill-block">
+        <h3>Libraries & Frameworks</h3>
+        <p>
+          Pandas, NumPy, Matplotlib, Seaborn, Plotly,
+          Scikit-learn, PyTorch, TensorFlow, Langchain, Keras, OpenAI, YOLO
+        </p>
+      </div>
+
+      <div class="skill-block">
+        <h3>Cloud</h3>
+        <p>Microsoft Azure (App Service, AI Search, Document Intelligence, Azure Machine Learning Workspace, Azure OpenAI, Bot Service, Azure Voice, Azure Container Registry, AAD, Function App)</p>
+      </div>
+
+      <div class="skill-block">
+        <h3>Version Control</h3>
+        <p>Git & GitHub, Azure DevOps</p>
+      </div>
+
+      <div class="skill-block">
+        <h3>Databases</h3>
+        <p>SQL</p>
+      </div>
+
+      <div class="skill-block">
+        <h3>API Frameworks</h3>
+        <p>Flask, FastAPI, Django REST Framework, Dash</p>
+      </div>
+
+      <div class="skill-block">
+        <h3>Tools</h3>
+        <p>Databricks, Postman</p>
+      </div>
+
+      <div class="skill-block soft-skill">
+        <h3>Soft Skills</h3>
+        <p>Leadership, Problem Solving, Communication, Teamwork</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-modern-grid">
+
+      <!-- PROJECT 1 -->
+      <div class="project-modern-card">
+
+        <div class="project-content">
+          <h3>Forecasting Platform</h3>
+          <p class="project-desc">
+            Enterprise-grade time-series forecasting platform for renewable energy.
+          </p>
+
+          <ul class="project-metrics">
+            <li><strong>↑ 94%</strong> forecast accuracy</li>
+            <li><strong>↓ 30%</strong> inference latency</li>
+          </ul>
+
+          <p class="project-role">
+            Role: Data Scientist · MLOps Engineer
+          </p>
+
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Temporal Fusion Transformer</span>
+            <span>DeepMC</span>
+            <span>Azure ML</span>
+            <span>Azure AD</span>
+            <span>MLflow</span>
+            <span>Docker</span>
+            <span>CI/CD</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="project-modern-card">
+      
+        <div class="project-content">
+          <h3>CI/CD & DevOps Pipelines</h3>
+          <p class="project-desc">
+            Secure DevOps pipelines for private Azure App Services.
+          </p>
+
+          <ul class="project-metrics">
+            <li><strong>100%</strong> automated deployments</li>
+            <li><strong>0</strong> public endpoint exposure</li>
+          </ul>
+
+          <p class="project-role">
+            Role: MLOps Engineer
+          </p>
+
+          <div class="project-tags">
+            <span>Azure DevOps</span>
+            <span>Azure App Service</span>
+            <span>Azure Key Vault</span>
+            <span>Private Endpoints</span>
+            <span>Docker</span>
+            <span>Git</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="project-modern-card">
+
+        <div class="project-content">
+          <h3>Databricks ML Pipeline</h3>
+          <p class="project-desc">
+            Automated ML training and scoring pipelines on Databricks.
+          </p>
+
+          <ul class="project-metrics">
+            <li><strong>↓ 40%</strong> training time</li>
+            <li><strong>↑ 2x</strong> experiment reproducibility</li>
+          </ul>
+
+          <p class="project-role">
+            Role: Data Scientist
+          </p>
+
+          <div class="project-tags">
+            <span>Databricks</span>
+            <span>Delta Lake</span>
+            <span>PySpark</span>
+            <span>Python</span>
+            <span>MLflow</span>
+            <span>Azure Blob</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 4 -->
+      <div class="project-modern-card">
+
+        <div class="project-content">
+          <h3>Anomaly Detection System</h3>
+          <p class="project-desc">
+            Real-time anomaly detection with alerting dashboards.
+          </p>
+
+          <ul class="project-metrics">
+            <li><strong>95%</strong> precision</li>
+            <li><strong>↓ 40%</strong> false alerts</li>
+          </ul>
+
+          <p class="project-role">
+            Role: Data Scientist
+          </p>
+
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Scikit-learn</span>
+            <span>Isolation Forest</span>
+            <span>Plotly</span>
+            <span>FastAPI</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 5 -->
+      <div class="project-modern-card">
+
+        <div class="project-content">
+          <h3>AI Chatbot Platform</h3>
+          <p class="project-desc">
+            Event-driven chatbot system using Azure Event Hub.
+          </p>
+
+          <ul class="project-metrics">
+            <li><strong>300+</strong> concurrent messages tested</li>
+            <li><strong>Near</strong> real-time processing</li>
+          </ul>
+
+          <p class="project-role">
+            Role: Django Developer
+          </p>
+
+          <div class="project-tags">
+            <span>Django REST</span>
+            <span>Azure Event Hub</span>
+            <span>Kafka</span>
+            <span>WebSockets</span>
+            <span>Docker</span>
+            <span>OpenAI</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience" class="section">
+    <div class="container">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="timeline">
+
+        <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+            <h3> Associate Data Scientist</h3>
+            <h4>Celebal Technologies PVT LTD · July/2024 – August/2025</h4>
+            <span class="experience-location">Jaipur, Rajasthan</span>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+            <h3>Jr. Associate Data Scientist</h3>
+            <h4>Celebal Technologies PVT LTD · July/2023 – June/2024</h4>
+            <span class="experience-location">Jaipur, Rajasthan</span>
+            </div>
+        </div>
+
+         <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+            <h3>Student Intern</h3>
+            <h4>Upflairs PVT LTD · June/2022 – Augst/2022</h4>
+            <span class="experience-location">Jaipur, Rajasthan</span>
+            </div>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION ================= -->
+<section id="education" class="section">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+
+    <div class="education-list">
+
+      <!-- EDUCATION ITEM 1 -->
+      <div class="education-card">
+        <h3 class="education-degree">
+          Bachelor of Technology <span>(Computer Science)</span>
+        </h3>
+
+        <p class="education-institute">
+          Poornima Group of Institutions
+        </p>
+
+        <div class="education-meta">
+          <span class="education-cgpa">CGPA -> 7.52</span>
+          <span class="education-duration">(2020 – 2024)</span>
+        </div>
+
+        <span class="education-location">Jaipur, Rajasthan</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= CERTIFICATIONS ================= -->
+<section id="certifications" class="section">
+  <div class="container">
+    <h2 class="section-title">Certifications</h2>
+
+    <div class="certifications-grid">
+
+      <a
+        href="https://learn.microsoft.com/en-us/users/nitishnama-7759/credentials/7730a8eb5e694804"
+        target="_blank"
+        class="cert-card"
+      >
+        <h3>Azure Data Scientist Associate</h3>
+        <span class="cert-code">DP-100</span>
+        <p>Microsoft · 2025</p>
+      </a>
+
+      <a
+        href="https://learn.microsoft.com/en-us/users/nitishnama-7759/credentials/71557f2b898fa35d"
+        target="_blank"
+        class="cert-card"
+      >
+        <h3>Azure AI Engineer Associate</h3>
+        <span class="cert-code">AI-102</span>
+        <p>Microsoft · 2025</p>
+      </a>
+
+      <a
+        href="https://learn.microsoft.com/en-us/users/nitishnama-7759/credentials/5E62494F2DB9550Fs"
+        target="_blank"
+        class="cert-card"
+      >
+        <h3>Azure AI Fundamentals</h3>
+        <span class="cert-code">AI-900</span>
+        <p>Microsoft · 2025</p>
+      </a>
+
+      <a
+        href="https://learn.microsoft.com/en-us/users/nitishnama-7759/credentials/20E3FAB7FE5A8490"
+        target="_blank"
+        class="cert-card"
+      >
+        <h3>Azure Data Fundamentals</h3>
+        <span class="cert-code">DP-900</span>
+        <p>Microsoft · 2025</p>
+      </a>
+
+      <a
+        href="https://learn.microsoft.com/en-us/users/nitishnama-7759/credentials/171a43b882c14667"
+        target="_blank"
+        class="cert-card"
+      >
+        <h3>Azure Fundamentals</h3>
+        <span class="cert-code">AZ-900</span>
+        <p>Microsoft · 2025</p>
+      </a>
+
+      <a
+        href="https://credentials.databricks.com/6cafcc4d-3fca-4af6-8a1b-afbc44687dc8#acc.HwzmWBtZ"
+        target="_blank"
+        class="cert-card"
+      >
+        <h3>Databricks Machine Learning Associate</h3>
+        <p>Databricks</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+    <!-- ================= PUBLICATIONS ================= -->
+<section id="publication" class="section">
+  <div class="container">
+    <h2 class="section-title">Publications</h2>
+
+    <div class="publications-grid">
+
+      <!-- Publication 1 -->
+      <a
+        href="https://drive.google.com/file/d/175ohGp1x9kbjWvKyHxRIEDk0s1fpcDDu/view"
+        target="_blank"
+        class="publication-card"
+      >
+        <h3>AI in Medical Healthcare</h3>
+
+        <p class="publication-desc">
+          International Journal of Scientific Research in Engineering & Management
+        </p>
+
+        <div class="publication-meta">
+          <span>April-2024</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+    <!-- ================= AWARDS ================= -->
+<section id="awards" class="section">
+  <div class="container">
+    <h2 class="section-title">Awards & Achievements</h2>
+
+    <div class="awards-grid">
+
+      <!-- Award 1 -->
+      <a
+        href="https://example.com/best-performer-award"
+        target="_blank"
+        class="award-card"
+      >
+        <h3>Spot Award</h3>
+
+        <p class="award-desc">
+          Celebal Technologies PVT LTD
+        </p>
+
+        <div class="award-meta">
+          <span>June-2025</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section contact">
+  <div class="container contact-container">
+    <h2 class="section-title">Let’s Build Something Impactful</h2>
+
+    <p class="section-text">
+      Open to Data Scientist role, collaborations, and impactful projects <br>Feel free to reach out</br>
+    </p>
+  </div>
+</section>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Nitish Nama. Built with HTML, CSS & JavaScript</p>
+    </div>
+  </footer>
+
+</body>
+</html>

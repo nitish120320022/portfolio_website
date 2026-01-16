@@ -1,0 +1,11 @@
+/* ===============================
+   ANIMATION HELPERS
+================================ */
+.section {
+  will-change: transform, opacity;
+}
+
+.projects-grid > *,
+.timeline > * {
+  will-change: transform, opacity;
+}
