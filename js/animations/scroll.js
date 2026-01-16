@@ -1,7 +1,3 @@
-// ===============================
-// SCROLL-BASED ANIMATIONS
-// ===============================
-
 gsap.registerPlugin(ScrollTrigger);
 
 /* ===============================
@@ -11,91 +7,77 @@ gsap.utils.toArray(".section").forEach(section => {
   gsap.from(section.querySelectorAll(".section-title, .section-text"), {
     scrollTrigger: {
       trigger: section,
-      start: "top 80%",
+      start: "top 85%",
       once: true,
     },
-    y: 40,
+    y: 30,
     opacity: 0,
-    duration: 0.8,
+    duration: 0.7,
     ease: "power2.out",
-    stagger: 0.15
+    stagger: 0.12
   });
 });
 
 /* ===============================
-   SKILLS ANIMATION (CARDS / BARS)
+   SKILLS (MODERN BLOCKS)
 ================================ */
-gsap.from(".skills-grid", {
+gsap.from(".skills-modern-grid > *", {
   scrollTrigger: {
     trigger: "#skills",
-    start: "top 75%",
+    start: "top 85%",
     once: true,
   },
-  y: 50,
+  y: 30,
   opacity: 0,
-  duration: 0.8,
-  ease: "power2.out"
+  duration: 0.7,
+  ease: "power2.out",
+  stagger: 0.12
 });
 
 /* ===============================
-   PROJECT CARDS ANIMATION
+   PROJECT CARDS
 ================================ */
-gsap.from(".projects-grid > *", {
+gsap.from(".projects-modern-grid > *", {
   scrollTrigger: {
     trigger: "#projects",
-    start: "top 75%",
-    once: true,
-  },
-  y: 60,
-  opacity: 0,
-  duration: 0.9,
-  ease: "power3.out",
-  stagger: 0.2
-});
-
-/* ===============================
-   EXPERIENCE TIMELINE
-================================ */
-gsap.from(".timeline > *", {
-  scrollTrigger: {
-    trigger: "#experience",
-    start: "top 75%",
-    once: true,
-  },
-  x: -40,
-  duration: 0.8,
-  ease: "power2.out",
-  stagger: 0.2
-});
-
-/* ===============================
-   EXPERIENCE TIMELINE ANIMATION
-================================ */
-gsap.from(".timeline-item", {
-  scrollTrigger: {
-    trigger: "#experience",
-    start: "top 75%",
+    start: "top 85%",
     once: true,
   },
   y: 40,
   opacity: 0,
   duration: 0.8,
-  ease: "power2.out",
-  stagger: 0.25
+  ease: "power3.out",
+  stagger: 0.15
 });
 
 /* ===============================
-   CONTACT SECTION ANIMATION
+   EXPERIENCE TIMELINE (CLEAN)
 ================================ */
-gsap.from("#contact .section-title, #contact .section-text, #contact .contact-actions, #contact .contact-links", {
+gsap.from(".timeline-item", {
   scrollTrigger: {
-    trigger: "#contact",
-    start: "top 80%",
+    trigger: "#experience",
+    start: "top 85%",
     once: true,
   },
   y: 30,
-  // opacity: 0,
-  duration: 0.8,
+  opacity: 0,
+  duration: 0.7,
   ease: "power2.out",
-  stagger: 0.15
+  stagger: 0.2
+});
+
+/* ===============================
+   CONTACT SECTION
+================================ */
+gsap.from("#contact .section-title, #contact .section-text", {
+  scrollTrigger: {
+    trigger: "#contact",
+    start: "top 85%",
+    once: true,
+  },
+  y: 20,
+  opacity: 0,
+  duration: 0.6,
+  ease: "power2.out",
+  stagger: 0.12
 });

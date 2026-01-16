@@ -182,3 +182,76 @@
   );
   pointer-events: none;
 }
+
+/* ===============================
+   MOBILE BREATHING FIXES
+================================ */
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+
+  .section-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  /* HERO */
+  .hero {
+    min-height: auto;
+    padding-top: 5rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+    line-height: 1.25;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  /* SKILLS */
+  .skills-modern-grid {
+    gap: 1.4rem;
+  }
+
+  /* PROJECTS */
+  .projects-modern-grid {
+    gap: 1.6rem;
+  }
+
+  /* TIMELINE */
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-content {
+    padding: 1.2rem;
+  }
+
+  /* CONTACT */
+  #contact .section-text {
+    white-space: normal; /* IMPORTANT */
+    padding: 0 0.5rem;
+  }
+}
