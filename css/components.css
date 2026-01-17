@@ -1088,3 +1088,10 @@
   }
 
 }
+
+@media (max-width: 768px) {
+  .contact-dropdown a {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+}
