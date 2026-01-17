@@ -4,9 +4,12 @@
 
 /* NAVBAR */
 .navbar {
-  position: sticky;
+  position: fixed;   /* 🔥 change from sticky */
   top: 0;
-  z-index: 100;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
   background: rgba(2, 6, 23, 0.75);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
