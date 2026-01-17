@@ -124,3 +124,26 @@ button {
 .btn-secondary:hover {
   background: var(--accent-soft);
 }
+
+/* ===============================
+   FLUID TYPOGRAPHY
+================================ */
+html {
+  font-size: clamp(14px, 1.2vw, 16px);
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+}
+
+p {
+  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+}

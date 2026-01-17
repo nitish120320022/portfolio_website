@@ -472,11 +472,11 @@
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid rgba(148, 163, 184, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .project-modern-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(0px);
   box-shadow: 0 0 40px var(--accent-soft);
 }
 
@@ -633,8 +633,8 @@
   font-size: 0.75rem;
   color: var(--accent);
   height: 10px;
-  opacity: 0;
-  transition: opacity 0.25s ease;
+  opacity: 1;
+  /* transition: opacity 0.25s ease; */
 }
 
 /* ===============================
@@ -707,8 +707,8 @@
   right: 1.4rem;
   font-size: 0.85rem;
   color: var(--accent);
-  opacity: 0;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  opacity: 1;
+  /* transition: opacity 0.2s ease, transform 0.2s ease; */
 }
 
 .publication-card:hover::after {
@@ -787,8 +787,8 @@
   right: 1.4rem;
   font-size: 0.85rem;
   color: var(--accent);
-  opacity: 0;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  opacity: 1;
+  /* transition: opacity 0.2s ease, transform 0.2s ease; */
 }
 
 .award-card:hover::after {
@@ -972,4 +972,95 @@
   font-style: italic;
   color: #94a3b8;
   opacity: 0.85;
+}
+
+.projects-modern-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+@media (max-width: 480px) {
+  .project-modern-card {
+    border-radius: 16px;
+  }
+
+  .project-content {
+    padding: 1.2rem;
+  }
+
+  .project-tags {
+    gap: 0.4rem;
+  }
+}
+
+.skills-modern-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+@media (max-width: 360px) {
+  .skill-block {
+    padding: 1.2rem;
+  }
+}
+
+.projects-modern-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+@media (max-width: 480px) {
+  .project-modern-card {
+    border-radius: 16px;
+  }
+
+  .project-content {
+    padding: 1.2rem;
+  }
+
+  .project-tags {
+    gap: 0.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline {
+    padding-left: 1.2rem;
+  }
+
+  .timeline::before {
+    left: 6px;
+  }
+
+  .timeline-dot {
+    left: 0;
+    width: 12px;
+    height: 12px;
+  }
+
+  .timeline-content {
+    margin-left: 1.8rem;
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cert-card,
+  .award-card,
+  .publication-card {
+    padding: 1.4rem;
+  }
+
+  .cert-card::after,
+  .award-card::after,
+  .publication-card::after {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 4rem 1rem 3.5rem;
+  }
+
+  .contact .section-title {
+    font-size: 2rem;
+  }
 }
