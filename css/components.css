@@ -1064,3 +1064,27 @@
     font-size: 2rem;
   }
 }
+
+@media (max-width: 480px) {
+
+  .skills-modern-grid,
+  .projects-modern-grid,
+  .certifications-grid,
+  .awards-grid,
+  .publications-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .project-modern-card,
+  .skill-block,
+  .cert-card,
+  .award-card,
+  .publication-card {
+    transform: none !important;
+  }
+
+}

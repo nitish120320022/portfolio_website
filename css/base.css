@@ -147,3 +147,21 @@ h3 {
 p {
   font-size: clamp(0.95rem, 1.6vw, 1.05rem);
 }
+
+/* ===============================
+   MOBILE VIEWPORT SAFETY
+================================ */
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}

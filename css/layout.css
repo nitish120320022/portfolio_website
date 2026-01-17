@@ -308,3 +308,16 @@
     padding: 0.6rem 1.2rem;
   }
 }
+
+@media (max-width: 480px) {
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+}
