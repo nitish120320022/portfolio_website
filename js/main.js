@@ -47,3 +47,23 @@ window.addEventListener("load", () => {
     duration: 0.8
   }, "-=0.6");
 });
+
+document.getElementById("email-link")?.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  const email = "namanitish03@gmail.com";
+  const subject = "Opportunity or Collaboration";
+  const body =
+    "Hi Nitish,%0D%0A%0D%0AI came across your portfolio and would like to connect.%0D%0A%0D%0ARegards,";
+
+  // Try mailto first
+  window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+  // Fallback to Gmail web after 500ms
+  setTimeout(() => {
+    window.open(
+      `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${body}`,
+      "_blank"
+    );
+  }, 500);
+});
