@@ -48,6 +48,10 @@ window.addEventListener("load", () => {
   }, "-=0.6");
 });
 
+// ===============================
+// EMAIL LINK HANDLER (FIXED)
+// ===============================
+
 document.getElementById("email-link")?.addEventListener("click", function (e) {
   e.preventDefault();
 
@@ -56,14 +60,57 @@ document.getElementById("email-link")?.addEventListener("click", function (e) {
   const body =
     "Hi Nitish,%0D%0A%0D%0AI came across your portfolio and would like to connect.%0D%0A%0D%0ARegards,";
 
-  // Try mailto first
-  window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${body}`;
+  const mailtoURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${body}`;
 
-  // Fallback to Gmail web after 500ms
-  setTimeout(() => {
-    window.open(
-      `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${body}`,
-      "_blank"
-    );
-  }, 500);
+  // Detect mobile devices
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    // ✅ MOBILE: open mail app chooser ONLY
+    window.location.href = mailtoURL;
+  } else {
+    // ✅ DESKTOP: try mailto first
+    window.location.href = mailtoURL;
+
+    // Fallback to Gmail after delay (desktop only)
+    setTimeout(() => {
+      window.open(
+        `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${body}`,
+        "_blank"
+      );
+    }, 600);
+  }
+});
+
+// ===============================
+// CONTACT DROPDOWN — FINAL LOGIC
+// ===============================
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menu = document.querySelector(".contact-menu");
+  const button = document.querySelector(".contact-btn");
+  const dropdown = document.querySelector(".contact-dropdown");
+
+  if (!menu || !button || !dropdown) return;
+
+  // Toggle on button click
+  button.addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    const isOpen = menu.getAttribute("data-open") === "true";
+
+    menu.setAttribute("data-open", String(!isOpen));
+    button.setAttribute("aria-expanded", String(!isOpen));
+  });
+
+  // Close on outside click
+  document.addEventListener("click", () => {
+    menu.setAttribute("data-open", "false");
+    button.setAttribute("aria-expanded", "false");
+  });
+
+  // Prevent inside clicks from closing
+  dropdown.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
 });
